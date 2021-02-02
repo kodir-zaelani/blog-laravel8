@@ -83,9 +83,7 @@ $currentUrl = url()->current();
 					<li class="nav-item">
 					  <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill" href="#custom-tabs-one-messages" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">Post</a>
 					</li>
-					<li class="nav-item">
-					  <a class="nav-link" id="custom-tabs-one-messages-tab" data-toggle="pill" href="#custom-tabs-one-resource" role="tab" aria-controls="custom-tabs-one-messages" aria-selected="false">Resource</a>
-					</li>
+					
 					
 				  </ul>
 				  
@@ -134,22 +132,7 @@ $currentUrl = url()->current();
 						<hr>
 						<p><a href="{{ url('') }}/post/postall" target="_blank"><font style="color: rgb(14, 138, 14)"><strong>All Post</strong></font></a></p>
 					</div>
-					<div class="tab-pane fade" id="custom-tabs-one-resource" role="tabpanel" aria-labelledby="custom-tabs-one-resource-tab">
-						
-						@foreach ($global_levelclass as $item)
-							@if ($item->learningresource->count()>0)
-							<p>
-								<span class="px-2 py-2 mr-3 badge badge-danger right">{{  $item->learningresource->count()  }}</span>
-								<a href="{{ url('') }}/resource/levelclass/{{ $item->slug }}" target="_blank">
-									{{ $item->title }}({{ $item->title_text_id }})
-								</a> <br>
-								<span>resource{{ $item->link }}</span>
-								
-							</p>
-							@endif
-						@endforeach	
-						<hr>
-					</div>
+					
 				  </div>
 				</div>
 				<!-- /.card -->
