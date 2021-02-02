@@ -33,7 +33,7 @@
         
         <li class="nav-item">
           <a href="{{ route('admin.dashboard') }}" class="nav-link {{ setActive('backend/dashboard')}}">
-            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <i class="fas fa-tachometer-alt"></i>
             <p>
               Dashboard
             </p>
@@ -44,7 +44,7 @@
          <li class="nav-item has-treeview {{ setOpen('backend/categoryposts'). setOpen('backend/subcategoryposts'). setOpen('backend/tags'). setOpen('backend/posts'). setOpen('backend/setarticles') }}">
           @if(auth()->user()->can('categoryposts.index') || auth()->user()->can('subcategoryposts.index') || auth()->user()->can('setarticles.index') || auth()->user()->can('tags.index') || auth()->user()->can('posts.index'))
           <a href="#" class="nav-link {{ setActive('backend/categoryposts'). setActive('backend/subcategoryposts'). setActive('backend/setarticles'). setActive('backend/tags'). setActive('backend/posts') }}">
-            <i class="nav-icon far fa-newspaper"></i>
+            <i class="far fa-newspaper"></i>
             <p>
               Posts Management
               <i class="right fas fa-angle-left"></i>
@@ -109,7 +109,7 @@
         <li class="nav-item has-treeview {{ setOpen('backend/categorypages'). setOpen('backend/pages') }} ">
           @if(auth()->user()->can('categorypages.index') || auth()->user()->can('pages.index'))
           <a href="#" class="nav-link {{ setActive('backend/categorypages'). setActive('backend/pages') }}">
-            <i class="nav-icon fas fa-copy"></i>
+            <i class="fas fa-copy"></i>
             <p>
               Pages Management
               <i class="fas fa-angle-left right"></i>
@@ -141,7 +141,7 @@
         <li class="nav-item has-treeview {{ setOpen('backend/categorydownloads'). setOpen('backend/downloadfiles') }} ">
           @if(auth()->user()->can('categorydownloads.index') || auth()->user()->can('downloadfiles.index'))
           <a href="#" class="nav-link {{ setActive('backend/categorydownloads'). setActive('backend/downloadfiles') }}">
-            <i class="nav-icon fas fa-copy"></i>
+            <i class="fas fa-copy"></i>
             <p>
               Download Management
               <i class="fas fa-angle-left right"></i>
@@ -160,7 +160,7 @@
             @can('downloadfiles.index')
             <li class="nav-item">
               <a href="{{ route('admin.downloadfiles.index') }}" class="nav-link {{ setActive('backend/downloadfiles') }}">
-                <i class="fas fa-file-download"></i> 
+                <i class="fas fa-file-download nav-icon"></i> 
                 <p>
                   Download File
                 </p>
@@ -238,7 +238,7 @@
             @can('settings.index')
             <li class="nav-item ">
               <a href="{{ route('admin.settings.index') }}" class="nav-link {{ setActive('backend/settings') }}">
-                <i class="fas fa-school"></i>
+                <i class="fas fa-blog nav-icon"></i>
                 <p>
                   Web Setting
                 </p>
@@ -248,7 +248,7 @@
             @can('socialmedia.index')
             <li class="nav-item">
               <a href="{{ route('admin.socialmedia.index') }}" class="nav-link {{ setActive('backend/socialmedia')}}">
-                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-up nav-icon"></i>
                 <p>
                   Social Media
                 </p>
@@ -258,7 +258,7 @@
             @can('widgets.index')
             <li class="nav-item">
               <a href="{{ route('admin.widgets.index') }}" class="nav-link {{ setActive('backend/widgets')}}">
-                <i class="far fa-thumbs-up"></i>
+                <i class="far fa-thumbs-up nav-icon"></i>
                 <p>
                   Widget
                 </p>
@@ -266,12 +266,9 @@
             </li>
             @endcan
             @can('menus.index')
-            <li class="nav-item ">
-              <a href="{{ route('admin.menus.index') }}" class="nav-link {{ setActive('backend/menus') }}">
-                <i class="fas fa-bars nav-icon"></i>
-                <p>
-                  Menu Frontend
-                </p>
+            <li class="nav-item">
+              <a href="{{ route('admin.menus.index') }}" class="nav-link {{ setActive('backend/menus') }}"><i class="fas fa-bars nav-icon"></i>
+                <p>Menu Frontend</p>
               </a>
             </li>
             @endcan
@@ -281,7 +278,7 @@
         <li class="nav-item has-treeview {{ setOpen('backend/roles'). setOpen('backend/permissions'). setOpen('backend/users') }} ">
           @if(auth()->user()->can('roles.index') || auth()->user()->can('permissions.index') || auth()->user()->can('users.index'))
           <a href="#" class="nav-link {{ setActive('backend/roles'). setActive('backend/permissions'). setActive('backend/users') }}">
-            <i class="fas fa-user-tag nav-icon"></i>
+            <i class="fas fa-user-tag"></i>
             <p>
               Users Management
               <i class="fas fa-angle-left right"></i>
@@ -290,7 +287,7 @@
           @endif
           <ul class="nav nav-treeview">
             @can('roles.index')
-            <li class="nav-item ">
+            <li class="nav-item">
               <a href="{{ route('admin.roles.index') }}" class="nav-link {{ setActive('backend/roles') }}">
                 <i class="fas fa-shield-alt nav-icon"></i>
                 <p>Roles</p>
