@@ -1,11 +1,7 @@
 ## Blog sederhana
 <p>Blog ini dibangun menggunakan laravel 8,Livewire, Frontend menggunakan Bootstrap 5, Backend menggunakan template Admin LTE 3.5 </p>
-
-<p align="center">
-<a href="https://github.com/ColorlibHQ/AdminLTE">https://camo.githubusercontent.com/ac4c92d1401fedc477913ae8e79bccca036079a5ffabab9366b2d285a105f436/68747470733a2f2f61646d696e6c74652e696f2f41646d696e4c5445332e706e67</a>
-</p>
-
-<p>Blog ini dibangun menggunakan laravel 8,Livewire, Frontend menggunakan Bootstrap 5, Backend menggunakan template Admin LTE 3.5 </p>
+<p>Untuk id user, role, permission dan beberapa table lainnya sudah menggunakan UUID </p>
+<p>Bagi yang mau mengembangkan silahkan daapt digunakan, Semoga bermanfaat </p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
