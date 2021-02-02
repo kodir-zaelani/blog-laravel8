@@ -55,7 +55,6 @@ class SettingController extends Controller
             'title'       => $request->input('title'),
             'tagline'       => $request->input('tagline'),
             'description'       => $request->input('description'),
-            'telephone'       => $request->input('telephone'),
             'whatapss'       => $request->input('whatapss'),
             'telegram'       => $request->input('telegram'),
             'website'       => $request->input('website'),

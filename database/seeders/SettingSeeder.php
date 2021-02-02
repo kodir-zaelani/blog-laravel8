@@ -19,7 +19,7 @@ class SettingSeeder extends Seeder
             'tagline' => 'Belajar dan terus belajar',
             'website' => 'www.lamankreasi.com',
             'email' => 'laman.kreasi@gmail.com',
-            'description' => 'Web sumber pembelajaran',
+            'description' => 'Melalui website ini semoga dapat menjadi sarana upaya peningkatan kompetensi',
             ]);
     }
 }

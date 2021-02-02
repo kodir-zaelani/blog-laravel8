@@ -20,7 +20,8 @@ class CreateSettingsTable extends Migration
             $table->string('website')->nullable();
             $table->string('email')->unique()->nullable();
             $table->text('description')->nullable();
-            $table->string('telephone',20)->nullable();
+            $table->string('telegram',100)->nullable();
+            $table->string('whatapps',20)->nullable();
             $table->boolean('status_slider')->default(false);
             $table->string('image')->nullable();
             $table->string('logo')->nullable();
