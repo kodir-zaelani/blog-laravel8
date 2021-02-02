@@ -2,7 +2,7 @@
 <p>Blog ini dibangun menggunakan laravel 8,Livewire, Frontend menggunakan Bootstrap 5, Backend menggunakan template Admin LTE 3.5 </p>
 <p>Untuk id user, role, permission dan beberapa table lainnya sudah menggunakan UUID </p>
 <p>Bagi yang mau mengembangkan silahkan dapat digunakan, Semoga bermanfaat </p>
-<p>Untuk Master data dapat melakukan import database yang telah disediakan</p>
+<p>Untuk Master data dapat melakukan import database yang telah disediakan pada folder master_db</p>
 <p>jika ada yang mau didiskusikan silahkan kirim email ke kodir.zaelani78@gmial.com</p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
