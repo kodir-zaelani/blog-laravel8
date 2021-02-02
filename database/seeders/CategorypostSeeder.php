@@ -17,27 +17,27 @@ class CategorypostSeeder extends Seeder
         Categorypost::create([
             'title' => 'Uncategorized',
             'slug' => 'uncategorized',
-            'author_id'     => '54a5e23a-bd3b-4fb7-99ac-f3ef35339f7d',
+            'author_id'     => '76456224-0616-4d12-9dbb-14f68b1b1290',
         ]);
         Categorypost::create([
             'title' => 'Belajar HTML, CSS',
             'slug' => 'bejara-html-css',
-            'author_id'     => '54a5e23a-bd3b-4fb7-99ac-f3ef35339f7d',
+            'author_id'     => '76456224-0616-4d12-9dbb-14f68b1b1290',
         ]);
         Categorypost::create([
             'title' => 'Berita',
             'slug' => 'berita',
-            'author_id'     => '54a5e23a-bd3b-4fb7-99ac-f3ef35339f7d',
+            'author_id'     => '76456224-0616-4d12-9dbb-14f68b1b1290',
         ]);
         Categorypost::create([
             'title' => 'Tutorial',
             'slug' => 'tutorial',
-            'author_id'     => '54a5e23a-bd3b-4fb7-99ac-f3ef35339f7d',
+            'author_id'     => '76456224-0616-4d12-9dbb-14f68b1b1290',
         ]);
         Categorypost::create([
             'title' => 'Belajar Laravel',
             'slug' => 'belajar-laravel',
-            'author_id'     => '54a5e23a-bd3b-4fb7-99ac-f3ef35339f7d',
+            'author_id'     => '76456224-0616-4d12-9dbb-14f68b1b1290',
         ]);
     }
 }

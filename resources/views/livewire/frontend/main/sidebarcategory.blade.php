@@ -32,7 +32,7 @@
                     @foreach ($categoryposts as $item)
                         @if ($item->post->count()>0)
                          <a href="{{ route('categorypost.show', $item->slug) }}" class="list-group-item list-group-item-action border-0 shadow-sm mb-2 rounded">
-                        <span class="pull-left ">
+                        {{-- <span class="pull-left ">
                             @if ($item->ImageThumbUrl)
                             <img src="{{ $item->imageThumbUrl }}" 
                             style="width: 50px;height: 50px" 
@@ -42,7 +42,7 @@
                             style="width: 50px;height: 50px" 
                             class="img-fluid rounded-circle mr-2" />
                             @endif
-                        </span> 
+                        </span>  --}}
                             {{ $item->title }}
                             
                         </a>

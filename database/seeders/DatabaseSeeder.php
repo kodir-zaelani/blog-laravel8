@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(SocialSeeder::class);
         // $this->call(TagSeeder::class);
         // $this->call(SetarticleSeeder::class);
+        // $this->call(CategorypageSeeder::class);
         // $this->call(MenuFrontendSeeder::class);
         // $this->call(RoleSeeder::class);
         // $this->call(PermissionsSeeder::class);
@@ -27,7 +28,6 @@ class DatabaseSeeder extends Seeder
 
         // Seeder dibawah ini dijalankan setelah dapat id uuid role dan user
         // $this->call(RoleuserSeeder::class);  // id = sesauikan dengan isi table masing-masing
-        // $this->call(CategorypageSeeder::class);
         // $this->call(CategorypostSeeder::class);
     }
 }

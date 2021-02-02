@@ -135,107 +135,9 @@
             @endcan
           </ul>
         </li>
-        {{--<li class="nav-item has-treeview {{setOpen('backend/lessons'). setOpen('backend/levelclass'). setOpen('backend/courses') }} ">
-          @if(auth()->user()->can('levelclass.index') || auth()->user()->can('courses.index') || auth()->user()->can('lessons.index'))
-          <a href="#" class="nav-link {{ setActive('backend/levelclass'). setActive('backend/courses'). setActive('backend/lessons') }}">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <p>
-              Course Management
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          @endif
-          <ul class="nav nav-treeview">
-            @can('levelclass.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.levelclass.index') }}" class="nav-link {{  setActive('backend/levelclass') }}">
-                <i class="fas fa-folder nav-icon"></i>
-                <p>Level Class</p>
-              </a>
-            </li>
-            @endcan
-            @can('courses.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.courses.index') }}" class="nav-link {{  setActive('backend/courses') }}">
-                <i class="fas fa-chalkboard"></i>
-                <p>Courses</p>
-              </a>
-            </li>
-            @endcan
-            @can('lessons.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.lessons.index') }}" class="nav-link {{  setActive('backend/lessons') }}">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <p>Lessons</p>
-              </a>
-            </li>
-            @endcan
-            
-          </ul>
-        </li>
+      
         
-        @can('announcements.index')
-        <li class="nav-item">
-          <a href="{{ route('admin.announcements.index') }}" class="nav-link {{ setActive('backend/announcements')}}">
-            <i class="fas fa-bullhorn"></i>
-            <p>
-              Announcements
-            </p>
-          </a>
-        </li>
-        @endcan
         
-        @can('livetvs.index')
-        <li class="nav-item">
-          <a href="{{ route('admin.livetvs.index') }}" class="nav-link {{ setActive('backend/livetvs')}}">
-            <i class="fas fa-video"></i>
-            <p>
-              Spansa One TV
-            </p>
-          </a>
-        </li>
-        @endcan
-        --}}
-        <li class="nav-item has-treeview {{ setOpen('backend/categorylearningresources'). setOpen('backend/learningresources') }} ">
-          @if(auth()->user()->can('categorylearningresources.index') || auth()->user()->can('learningresources.index'))
-          <a href="#" class="nav-link {{ setActive('backend/categorylearningresources'). setActive('backend/learningresources') }}">
-            <i class="nav-icon fas fa-copy"></i>
-            <p>
-              Learning Resources
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          @endif
-          <ul class="nav nav-treeview">
-            @can('levelclasses.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.levelclasses.index') }}" class="nav-link {{  setActive('backend/levelclasses') }}">
-                <i class="fas fa-folder nav-icon"></i>
-                <p>Level Class</p>
-              </a>
-            </li>
-            @endcan
-            @can('categorylearningresources.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.categorylearningresources.index') }}" class="nav-link {{  setActive('backend/categorylearningresources') }}">
-                <i class="fas fa-folder nav-icon"></i>
-                <p>Category Resources</p>
-              </a>
-            </li>
-            @endcan
-            @can('learningresources.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.learningresources.index') }}" class="nav-link {{ setActive('backend/learningresources') }}">
-                <i class="fas fa-file-download"></i> 
-                <p>
-                  Resources
-                </p>
-              </a>
-            </li>
-            @endcan
-          </ul>
-        </li>
-
         <li class="nav-item has-treeview {{ setOpen('backend/categorydownloads'). setOpen('backend/downloadfiles') }} ">
           @if(auth()->user()->can('categorydownloads.index') || auth()->user()->can('downloadfiles.index'))
           <a href="#" class="nav-link {{ setActive('backend/categorydownloads'). setActive('backend/downloadfiles') }}">
@@ -267,28 +169,7 @@
             @endcan
           </ul>
         </li>
-        <li class="nav-item has-treeview {{ setOpen('backend/refreligions'). setOpen('backend/downloadfiles') }} ">
-          @if(auth()->user()->can('refreligions.index') || auth()->user()->can('downloadfiles.index'))
-          <a href="#" class="nav-link {{ setActive('backend/refreligions'). setActive('backend/downloadfiles') }}">
-            <i class="nav-icon fas fa-copy"></i>
-            <p>
-              Referensi
-              <i class="fas fa-angle-left right"></i>
-            </p>
-          </a>
-          @endif
-          <ul class="nav nav-treeview">
-            @can('refreligions.index')
-            <li class="nav-item">
-              <a href="{{ route('admin.refreligions.index') }}" class="nav-link {{  setActive('backend/refreligions') }}">
-                <i class="fas fa-folder nav-icon"></i>
-                <p>Religion</p>
-              </a>
-            </li>
-            @endcan
-           
-          </ul>
-        </li>
+       
         <li class="nav-item has-treeview {{setOpen('backend/sliders'). setOpen('backend/albums'). setOpen('backend/photos') }} ">
           @if(auth()->user()->can('photos.index') || auth()->user()->can('sliders.index') || auth()->user()->can('albums.index'))
           <a href="#" class="nav-link {{ setActive('backend/sliders'). setActive('backend/photos'). setActive('backend/albums') }}">

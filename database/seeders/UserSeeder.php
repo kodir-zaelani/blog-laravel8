@@ -19,10 +19,10 @@ class UserSeeder extends Seeder
     {
         // $faker = \Faker\Factory::create();
         User::create([
-            'name'      => 'Super Admin',
-            'slug'      => 'super-admin',
-            'email'     => 'super@gmail.com',
-            'email_verified_at' => now(),
+            'name'      => 'Kodir Zaelani',
+            'slug'      => 'kodir-zaelani',
+            'email'     => 'kodir.zaelani78@gmail.com',
+            // 'email_verified_at' => now(),
             'bio'     => 'Saya merupakan pemilik website www.lamankreasi.com',
             'password' => bcrypt('secret12'),
             'remember_token' => Str::random(30),
