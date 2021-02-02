@@ -39,14 +39,17 @@
                               Kritik, saran, dan tawaran kerja sama atau kolaborasi bisa dikirimkan ke alamat kontak dibawah
                           </p>
                           <p>
-                              <a href="https://api.whatsapp.com/send?phone=62{{ $global_settings->whatapss }}&text=Assalamualaikum" target="_blank"> 
-                                  <i class="fab fa-whatsapp"></i> 
-                                  @if ($global_settings->whatapss)
-                                  {{ $global_settings->whatapss }}
-                                  @else
-                                  08115986878
-                                  @endif
-                              </a>
+                            @if ($global_social->whatapps)
+                            <a href="https://api.whatsapp.com/send?phone=62{{ $global_social->whatapps }}&text=Assalamualaikum" target="_blank"> 
+                                 <i class="fab fa-whatsapp"></i> 
+                                 {{ $global_social->whatapps }}
+                            </a>
+                           @else
+                               <a href="https://api.whatsapp.com/send?phone=628115986878&text=Assalamualaikum" target="_blank"> 
+                               <i class="fab fa-whatsapp"></i> 
+                               08115986878
+                               </a>
+                           @endif
                           </p>
                           <p>
                               <a href="mailto:com.{{ $global_settings->email }}"> 

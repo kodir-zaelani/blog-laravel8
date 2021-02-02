@@ -158,48 +158,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card card-primary">
-                        <div class="card-header">
-                            <h3 class="card-title">Wathapps & Telegram</h3>
-                            <div class="card-tools">
-                                <button type="button" class="btn btn-tool btn-sm" data-card-widget="collapse" data-toggle="tooltip"
-                                title="Collapse">
-                                <i class="fas fa-minus"></i></button>
-                                <button type="button" class="btn btn-tool btn-sm" data-card-widget="remove" data-toggle="tooltip"
-                                title="Remove">
-                                <i class="fas fa-times"></i></button>
-                            </div>
-                        </div>
-                        <div class="card-body">
-                            {{-- <div class="form-group">
-                                <label for="telephone">Telephone </label>
-                                <input id="telephone" name="telephone" type="text" class="form-control @error('telephone') is-invalid @enderror" placeholder="Telephone" value="{{ old('telephone') ?? $setting->telephone}}">
-                                @error('telephone')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div> --}}
-                            <div class="form-group">
-                                <label for="telegram">Id Telegram </label>
-                                <input id="telegram" name="telegram" type="text" class="form-control @error('telegram') is-invalid @enderror" placeholder="@telegram" value="{{ old('telegram') ?? $setting->telegram}}">
-                                @error('telegram')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label for="whatapss">Whatapss </label>
-                                <input id="whatapss" name="whatapss" type="text" class="form-control @error('whatapss') is-invalid @enderror" placeholder="Whatapss" value="{{ old('whatapss') ?? $setting->whatapss}}">
-                                @error('whatapss')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div> 
+                    
                     <div class="card card-primary">
                         <div class="card-header">
                             <h3 class="card-title">Image Banner</h3>
