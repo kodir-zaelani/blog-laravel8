@@ -230,18 +230,12 @@ class PermissionsSeeder extends Seeder
         Permission::create(['name' => 'advertisements.edit']);
         Permission::create(['name' => 'advertisements.delete']);
         
-        //permission for categorylearningresources
-        Permission::create(['name' => 'categorylearningresources.index']);
-        Permission::create(['name' => 'categorylearningresources.create']);
-        Permission::create(['name' => 'categorylearningresources.edit']);
-        Permission::create(['name' => 'categorylearningresources.delete']);
+        //permission for categorydownloads
+        Permission::create(['name' => 'categorydownloads.index']);
+        Permission::create(['name' => 'categorydownloads.create']);
+        Permission::create(['name' => 'categorydownloads.edit']);
+        Permission::create(['name' => 'categorydownloads.delete']);
         
-        //permission for learningresources
-        Permission::create(['name' => 'learningresources.index']);
-        Permission::create(['name' => 'learningresources.create']);
-        Permission::create(['name' => 'learningresources.edit']);
-        Permission::create(['name' => 'learningresources.delete']);
-         
           
         //permission for widgets
         Permission::create(['name' => 'widgets.index']);
