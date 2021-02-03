@@ -69,7 +69,7 @@
                                         </div>
                                         <div class="form-check d-inline">
                                             <input class="form-check-input" type="radio" name="r1" id="e1" onchange="show2()" />
-                                            <label for="file" class="form-check-label">Link Embed</label>
+                                            <label for="file" class="form-check-label">Link File</label>
                                         </div>
                                     </div>
                                    
@@ -82,8 +82,9 @@
                                     </div>
                                     
                                     <div class="form-group" id="sh2" style="display:none;">
-                                        <label for="linkfile">Link File Embed</label>
-                                        <textarea name="linkfile" id="linkfile" class="form-control @error('linkfile') is-invalid @enderror"  rows="5" placeholder="Enter a contact link file">{{ old('linkfile') }}</textarea>
+                                        <label for="linkfile">Link File </label>
+                                        <input id="linkfile" name="linkfile" type="linkfile"   class="form-control @error('linkfile') is-invalid @enderror" ><br>
+                                        <span>example : https://drive.google.com/file/d/11aULn0IWM-X0GxhIjqBYa0GntnDDjYxO/view </span>
                                         
                                         @error('linkfile')
                                         <span class="invalid-feedback">{{ $message }}</span>
