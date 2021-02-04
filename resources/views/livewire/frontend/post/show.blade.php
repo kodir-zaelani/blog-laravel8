@@ -49,6 +49,37 @@
                                         </div>
                                         
                                         {!! $post->content !!}
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="share-media-social">
+                                                    <h6>Bagikan artikel ini ke:</h6>
+                                                      <div class="facebook">
+                                                        {{-- <a href="http://www.facebook.com/sharer.php?u={{ url('',$post->slug) }}" target="_blank"><i class="fab fa-facebook"></i></a> --}}
+                                                        <a class="facebook" href="http://www.facebook.com/sharer.php?u={{ url('/post/detail/',$post->slug) }}&t={{ $post->title }}" title="Share this post on Facebook" onclick="window.open(this.href); return false;"><i class="fab fa-facebook"></i></a>
+
+                                                      </div>
+                                                      <div class="twitter">
+                                                        <a class="twitter" href="https://twitter.com/share?text={{ $post->title }}&url={{ url('/post/detail',$post->slug) }}" title="Share this post on Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                                                      </div>
+                                                      <div class="google-plus">
+                                                        <a href="https://plus.google.com/share?url={{ url('/post/detail',$post->slug) }}" target="_blank"><i class="fab fa-google-plus"></i></a>
+                                                      </div>
+                                                      <div class="whatsapp">
+                                                        <a class="whatsapp" href="whatsapp://send?text={{ url('/post/detail',$post->slug) }}" title="Share this post on Whatsapp"><i class="fab fa-whatsapp-square"></i></a>
+                                                      </div>
+                                                      <div class="telegram">
+                                                        <a href="https://telegram.me/share/url?url={{ url('/post/detail',$post->slug) }}" target="_blank" title="Share to Telegram"><i class="fab fa-telegram"></i></a>
+                                                        {{-- <a href=""><i class="fab fa-telegram-plane"></i></a> --}}
+                                                      </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        Artikel ini telah dibaca sebanyak <strong>{{ $post->view_count }}</strong> kali
+                                        @if ($post->tags_html )
+                                        <p> <i class="fa fa-tags mr-2"></i> {!! $post->tags_html !!}</p>
+                                        @endif
+                                        
                                         @if ($post->video)
                                         <hr>
                                         <div class="pt-5 embed-responsive embed-responsive-16by9">
@@ -60,11 +91,7 @@
                                             </div>
                                         </div>
                                         @endif
-                                        <hr>
-                                        Artikel ini telah dibaca sebanyak <strong>{{ $post->view_count }}</strong> kali
-                                        @if ($post->tags_html )
-                                        <p> <i class="fa fa-tags mr-2"></i> {!! $post->tags_html !!}</p>
-                                        @endif
+                                       
                                         
                                     </div>
                                 </div>

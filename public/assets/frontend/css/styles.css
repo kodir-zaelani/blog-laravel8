@@ -168,6 +168,85 @@ section {
 
 
 /* End Article */
+
+/* Share Media Social */
+.share-media-social{
+	text-align: center;
+    margin: auto;
+  }
+  .facebook,
+  .twitter,
+  .google-plus,
+  .whatsapp,
+  .telegram{
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .facebook{
+    /* width: 40px;
+	height: 40px; */
+	font-size: 30px;
+    /* background-color: #2a4299; */
+    line-height: 40px;
+    text-align: center;
+    /* color: #fff; */
+    /* border-radius: 50%; */
+  }
+  .facebook a:hover{
+	font-size: 40px;
+    /* background-color: #748ff0; */
+    line-height: 40px;
+    text-align: center;
+    color: #5273ec;
+    /* border-radius: 50%; */
+  }
+  .twitter{
+	font-size: 30px;
+    line-height: 40px;
+    color: #2d8aec;
+    text-align: center;
+  }
+  .twitter a:hover{
+	font-size: 40px;
+    text-align: center;
+    color: #71b0f3;
+  }
+  .google-plus{
+	font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #fb2929;
+  }
+  .google-plus a:hover{
+	font-size: 40px;
+    text-align: center;
+    color: #f15b5b;
+  }
+  .whatsapp{
+	font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #059e40;
+  }
+  .whatsapp a:hover{
+	font-size: 40px;
+    text-align: center;
+    color: #2cd66d;
+  }
+  .telegram{
+	font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #4ab3f0;
+  }
+  .telegram a:hover{
+	font-size: 40px;
+    text-align: center;
+    color: #79c5f1;
+  }
+
+/* End Share Media Social */
+
 /* Portfolio */
 .portfolio {
 	background: rgba(239, 244, 248, 0.945);
@@ -972,6 +1051,10 @@ End Call To Action CSS
 .blog-meta span a{
 	color:#666;
 	font-weight:400;
+}
+.blog-meta span a:hover{
+	color:#06408be7;
+	font-weight:800;
 }
 .blog-meta span.author img {
 	width: 50px;
