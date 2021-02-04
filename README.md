@@ -1,4 +1,4 @@
-## Blog sederhana
+## Blog sederhana UUID
 <p>Blog ini dibangun menggunakan laravel 8,Livewire, Frontend menggunakan Bootstrap 5, Backend menggunakan template Admin LTE 3.5 </p>
 <p>Untuk id user, role, permission dan beberapa table lainnya sudah menggunakan UUID </p>
 <p>Bagi yang mau mengembangkan silahkan dapat digunakan, Semoga bermanfaat </p>
