@@ -60,9 +60,7 @@
                             </div>
                             @endforeach
                         <!-- end berita section -->
-                        @else
-                        <h2 class="fw-bold" style="color:red">Nothing Post Found</h2>
-                        @endif
+                        
                     </div>
                     <div class="row pt-5 justify-content-center">
                         <div class="col-12">
@@ -73,6 +71,9 @@
                             <!--/ End Pagination -->
                         </div>
                     </div>	
+                    @else
+                    <h2 class="fw-bold" style="color:red">Nothing Post Found</h2>
+                    @endif
                 </div>
                 <div class="col-md-4 col-lg-4 col-12">
                     <!-- Blog Sidebar -->
